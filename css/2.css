@@ -1,3 +1,10 @@
-h1.centre{
-text-shadow: 5px 5px 5px #CCCCCC;
+h1.cs{
+  text-shadow: 5px 5px 5px #CCCCCC;
+  text-align: center;
+}
+h2.ct{
+  text-align: center;
+}
+body{
+  background-color: #eaeaea;
 }
