@@ -1,6 +1,5 @@
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 2em;
   background: rgb(0, 212, 255);
   background: rgb(0, 212, 255);
   background: linear-gradient(
@@ -28,4 +27,8 @@ br {
   margin: -10px -8px;
   position: fixed;
   box-shadow: 0 5px 30px #909090;
+}
+
+main {
+  margin: 2em;
 }
