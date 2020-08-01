@@ -1,3 +1,22 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background: rgb(0, 212, 255);
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(55, 135, 255, 1) 5%,
+    rgba(55, 135, 255, 1) 95%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
 .center-title {
   text-align: center;
+}
+
+br {
+  border-style: solid;
+  border-color: white;
 }
