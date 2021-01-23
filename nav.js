@@ -5,7 +5,7 @@ obj.innerHTML = "<nav id='navjs-nav'></nav>";
 
 obj = document.getElementById("navjs-nav");
 obj.style.backgroundColor = "black";
-obj.style.position = "sticky";
+obj.style.position = "absolute";
 obj.style.width = `${window.innerWidth}px`;
 obj.innerHTML = "<a id='navjs-nav-address-for-pfp'></a>"
 
