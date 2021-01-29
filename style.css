@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
 }
 
+.proj {
+  margin-left: 20px;
+}
+
 .cell {
   display: inline-block;
   padding: 20px;
