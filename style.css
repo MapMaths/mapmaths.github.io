@@ -7,17 +7,23 @@ body {
   font-family: Helvetica;
   font-size: 15px;
   display: flex;
+  margin: 0px;
   justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
 }
 
+.cell {
+  display: inline-block;
+  padding: 20px;
+  overflow: hidden;
+}
+
 .card {
-  position: static;
-  margin-top: 20px;
-  margin-bottom: 10px;
   width: 320px;
-  height: 380px;
+  height: 380px !important;
+  max-height: 380px !important;
+  position: static;
   background-color: #fff;
   border-radius: 6px;
   overflow: hidden;
@@ -57,9 +63,17 @@ a:hover {
 .description {
   font-size: 1rem;
   line-height: 1.4rem;
+  font-style: italic;
 }
 
-.loading .image, .loading h4, .loading .description {
+.type {
+  position: relative;
+  bottom: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.loading .image, .loading h4, .loading .description .type {
   background-color: var(--loading-grey);
   background: linear-gradient( 100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, 0) 60%) var(--loading-grey);
   background-size: 200% 100%;
@@ -93,9 +107,9 @@ a:hover {
   box-shadow: 2px 2px 2px #11111122;
   width: 100%;
   padding: 0px 0px 0px 30px;
-  position: absolute;
-  left: 0px;
+  position: fixed;
   top: 0px;
+  left: 0px;
   z-index: 1000;
   text-align: left;
   height: 42px;
