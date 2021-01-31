@@ -14,6 +14,19 @@ body {
   font-family: "IBM Plex Serif",Georgia,serif;
 }
 
+.skeleton {
+  margin-top: 10%;
+  margin-left: 7.5%
+}
+
+.textblock {
+  position: -webkit-sticky;
+  position: sticky;
+  border-right-style: solid;
+  border-right-width: 2px;
+  height: fit-content;
+}
+
 h1 {
   font: inherit;
   font-weight: bold;
@@ -32,6 +45,10 @@ h1 {
   margin-right: .5rem;
   margin-top: -.2rem;
   display: inline-block;
+}
+
+.block {
+  margin-left: 10px;
 }
 
 .cell {
