@@ -6,12 +6,9 @@ body {
   background-color: #f6f6f6;
   font-family: Helvetica;
   font-size: 15px;
-  display: flex;
   margin: 0px;
-  justify-content: space-evenly;
-  align-items: center;
   min-height: 100vh;
-  font-family: "IBM Plex Serif",Georgia,serif;
+  font-family: "IBM Plex Serif", Georgia, serif;
 }
 
 .skeleton {
@@ -20,11 +17,11 @@ body {
 }
 
 .textblock {
-  position: -webkit-sticky;
   position: sticky;
   border-right-style: solid;
   border-right-width: 2px;
   height: fit-content;
+  top: 43px;
 }
 
 h1 {
