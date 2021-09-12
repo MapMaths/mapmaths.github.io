@@ -12,92 +12,101 @@
   <meta property="og:title" content="Welcome~" />
   <meta property="og:image" content="favicon.ico" />
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/62785981?v=4"/>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/62785981?v=4" />
   <title>MapMaths Website Homepage</title>
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <div id="nav">
-    <table style="width:100%; font-size: 20px; height:40px" aria-describedby="nav bar table">
+  <nav>
+    <table aria-describedby="nav bar table">
       <tbody>
         <tr>
-          <td>
-            <strong>
-              <div id="title">MapMaths</div>
-            </strong>
-          </td>
-          <div id="gh" style="opacity:70%;position:absolute;right:55px;top:4.5px;cursor:pointer;z-index:1000"
-            title="GitHub">
+          <td id="gh" style="opacity:70%;top:4.5px;cursor:pointer;z-index:1000" title="GitHub">
             <img src="assets/github.svg" alt="GitHub">
-          </div>
+          </td>
           <script>
             var gh = document.getElementById("gh");
-            gh.onmouseenter = function () { ghub.style.opacity = 1.0 }
-            gh.onmouseleave = function () { ghub.style.opacity = 0.7 }
-            gh.onclick = function () { document.location.href = "https://github.com/MapMaths" }
+            gh.onmouseenter = function () {
+              gh.style.opacity = 1.0
+            }
+            gh.onmouseleave = function () {
+              gh.style.opacity = 0.7
+            }
+            gh.onclick = function () {
+              document.location.href = "https://github.com/MapMaths"
+            }
           </script>
-          <div id="gl" style="opacity:70%;position:absolute;right:100px;top:4.5px;cursor:pointer;z-index:1000"
-            title="Glitch">
+          <td id="gl" style="opacity:70%;top:4.5px;cursor:pointer;z-index:1000" title="Glitch">
             <img width="40px" src="assets/glitch-day.svg" alt="Glitch">
-          </div>
+          </td>
           <script>
-            var bcv = document.getElementById("gl");
-            bcv.onmouseenter = function () { bcv.style.opacity = 1.0 }
-            bcv.onmouseleave = function () { bcv.style.opacity = 0.7 }
-            bcv.onclick = function () { document.location.href = "https://glitch.com/@MapMaths" }
+            var gl = document.getElementById("gl");
+            gl.onmouseenter = function () {
+              gl.style.opacity = 1.0
+            }
+            gl.onmouseleave = function () {
+              gl.style.opacity = 0.7
+            }
+            gl.onclick = function () {
+              document.location.href = "https://glitch.com/@MapMaths"
+            }
           </script>
         </tr>
       </tbody>
     </table>
-  </div>
+  </nav>
   <div class="skeleton">
-    <div class="block" id="glitchb">
-      <div class="textblock">
-        <h1 class="note">Glitch</h1>
-      </div>
-      <div class="cell">
-        <div class="card">
-          <div class="image">
-            <img src="assets/lunarshow.jpg" alt="lunarshow">
-          </div>
-          <div class="content">
-            <h4><a href="https://lunarshow.glitch.me">Lunarshow</a></h4>
-            <div class="description">
-              A cool Lunar-cycle simulator, contains a VR mode. With Node.js Express.
+    <section id="projects" class="l">
+      <h1>My Projects</h1>
+      <section id="p-glitch" class="s">
+        <div class="textblock">
+          <h1 class="note">Glitch</h1>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <div class="image">
+              <img src="assets/lunarshow.jpg" alt="lunarshow">
             </div>
-            <p class="type">Web · JavaScript - Node - aframe.js - showdown.js</p>
+            <div class="content">
+              <h4><a href="https://lunarshow.glitch.me" target="_blank">Lunarshow</a></h4>
+              <div class="description">
+                A cool Lunar-cycle simulator, contains a VR mode(not completed). With Node.js Express.
+              </div>
+              <p class="type">Web · JavaScript - Node - aframe.js - showdown.js</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cell">
-        <div class="card">
-          <div class="image">
-            <img src="assets/degree-calculator.jpg" alt="degree-calculator">
-          </div>
-          <div class="content">
-            <h4><a href="https://degree-calculator.glitch.me">Degree Calculator</a></h4>
-            <div class="description">
-              Degree calculator - A calculator for angle calculating
+        <div class="cell">
+          <div class="card">
+            <div class="image">
+              <img src="assets/degree-calculator.jpg" alt="degree-calculator">
             </div>
-            <p class="type">Frontend · JavaScript</p>
+            <div class="content">
+              <h4><a href="https://degree-calculator.glitch.me" target="_blank">Degree Calculator</a></h4>
+              <div class="description">
+                Degree calculator - A calculator for angle calculating.
+              </div>
+              <p class="type">Frontend · JavaScript</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cell">
-        <div class="card">
-          <div class="image">
-            <img src="assets/fancy-man-face.jpg" alt="fancy-man-face">
-          </div>
-          <div class="content">
-            <h4><a href="https://fancy-man-face.glitch.me">Fancy Man Face</a></h4>
-            <div class="description">
-              My first CSS painting
+        <div class="cell">
+          <div class="card">
+            <div class="image">
+              <img src="assets/fancy-man-face.jpg" alt="fancy-man-face">
             </div>
-            <p class="type">Pure · HTML - CSS</p>
+            <div class="content">
+              <h4><a href="https://fancy-man-face.glitch.me" target="_blank">Fancy Man Face</a></h4>
+              <div class="description">
+                My first CSS painting.
+              </div>
+              <p class="type">Pure · HTML - CSS</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   </div>
 </body>
 
