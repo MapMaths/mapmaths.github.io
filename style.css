@@ -31,7 +31,7 @@ body {
 nav {
   width: calc(100vw - var(--scrollw));
   height: calc(100vh + 40px);
-  background: linear-gradient(45deg, tomato, yellow);
+  background: linear-gradient(90deg, tomato, yellow);
   color: white;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 2px 2px 2px #11111122;
@@ -46,6 +46,12 @@ nav table tbody tr {
   height: 40px;
   font-size: 20px;
   position: fixed;
+}
+
+nav h1 {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: calc(50vh - 1vw);
 }
 
 #projects {
