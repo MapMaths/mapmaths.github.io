@@ -1,5 +1,20 @@
 :root {
   --loading-grey: #ededed;
+  --scrollw: 12px;
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollw);
+}
+
+::-webkit-scrollbar-track {
+  background: #FCF6E3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DBD3BE;
+  border-radius: 10px;
+  width: 10x;
 }
 
 body {
@@ -11,13 +26,12 @@ body {
 }
 
 nav {
-  width: 100vw;
-  height: 100vh;
+  width: calc(100vw - var(--scrollw));
+  height: calc(100vh + 40px);
   background: linear-gradient(45deg, tomato, yellow);
   color: white;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 2px 2px 2px #11111122;
-  padding: 0px 0px 0px 30px;
   top: 0px;
   left: 0px;
   z-index: 1000;
@@ -28,9 +42,7 @@ nav table tbody tr {
   width: 100%;
   height: 40px;
   font-size: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  position: fixed;
 }
 
 #projects {
