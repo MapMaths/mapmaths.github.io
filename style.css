@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  background: #f6f6f6;
   font-size: 15px;
   margin: 0px;
   min-height: 100vh;
@@ -31,7 +31,7 @@ body {
 nav {
   width: calc(100vw - var(--scrollw));
   height: calc(100vh + 40px);
-  background: linear-gradient(90deg, tomato, yellow);
+  background: linear-gradient(45deg, tomato, yellow);
   color: white;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 2px 2px 2px #11111122;
@@ -42,16 +42,28 @@ nav {
 }
 
 nav table tbody tr {
-  width: 100%;
+  width: calc(100vw - var(--scrollw));
   height: 40px;
   font-size: 20px;
   position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1001;
 }
 
-nav h1 {
+nav table tbody tr td:nth-of-type(1) {
+  padding-top: 5px;
+}
+
+nav table tbody tr td strong {
+  visibility: hidden;
+}
+
+nav p {
   text-align: center;
-  font-size: 2vw;
-  margin-top: calc(50vh - 1vw);
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  font-size: 4rem;
 }
 
 #projects {
