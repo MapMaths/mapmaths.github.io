@@ -34,7 +34,6 @@ nav {
   background: linear-gradient(45deg, tomato, yellow);
   color: white;
   font-family: 'Open Sans', sans-serif;
-  box-shadow: 2px 2px 2px #11111122;
   top: 0px;
   left: 0px;
   z-index: 1000;
