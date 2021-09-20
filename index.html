@@ -21,7 +21,7 @@
   />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/62785981?v=4" />
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body class="ms-Fabric" dir="ltr">
@@ -32,38 +32,12 @@
           <td>
             <strong>MapMaths</strong>
           </td>
-          <td id="gh" class="shareicons"
-            style="opacity:70%;position:absolute;right:55px;top:4px;cursor:pointer;z-index:1000" title="GitHub">
+          <td id="gh" class="shareicons" title="GitHub">
             <img src="assets/github.svg" alt="GitHub">
           </td>
-          <script>
-            var gh = document.getElementById("gh");
-            gh.onmouseenter = function () {
-              gh.style.opacity = 1.0
-            }
-            gh.onmouseleave = function () {
-              gh.style.opacity = 0.7
-            }
-            gh.onclick = function () {
-              document.location.href = "https://github.com/MapMaths"
-            }
-          </script>
-          <td id="gl" class="shareicons"
-            style="opacity:70%;position:absolute;right:4.5px;top:4px;cursor:pointer;z-index:1000" title="Glitch">
+          <td id="gl" class="shareicons" title="Glitch">
             <img width="40px" src="assets/glitch-day.svg" alt="Glitch">
           </td>
-          <script>
-            var gl = document.getElementById("gl");
-            gl.onmouseenter = function () {
-              gl.style.opacity = 1.0;
-            }
-            gl.onmouseleave = function () {
-              gl.style.opacity = 0.7;
-            }
-            gl.onclick = function () {
-              document.location.href = "https://glitch.com/@MapMaths";
-            }
-          </script>
         </tr>
       </tbody>
     </table>

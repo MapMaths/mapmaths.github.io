@@ -1,21 +1,25 @@
 'use strict';
 
-// window.onload = () => {
-    var mm = document.querySelector('nav p strong');
-    var mmtop = mm.getBoundingClientRect().top;
-    var mmleft = mm.getBoundingClientRect().left;
-// };
+var mm = document.querySelector('nav p strong');
+var mmtop = mm.getBoundingClientRect().top;
+var mmleft = mm.getBoundingClientRect().left;
+
+var gh = document.getElementById("gh");
+gh.onclick = () => {document.location.href = "https://github.com/MapMaths"};
+
+var gl = document.getElementById("gl");
+gl.onclick = () => {document.location.href = "https://glitch.com/@MapMaths"};
 
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY <= window.innerHeight){
-        document.querySelector('nav').style.background = 
-            "linear-gradient("
-            + (window.scrollY / window.innerHeight + 1) * 45
-            + "deg, tomato, yellow)";
-        mm.style.position = "absolute";
-        mm.style.top = 
-            window.scrollY / (mmtop - document.querySelector('nav').getBoundingClientRect().top) + "px";
+    if (window.scrollY <= window.innerHeight) {
+        document.querySelector('nav').style.background =
+            "linear-gradient(" +
+            (window.scrollY / window.innerHeight + 1) * 45 +
+            "deg, tomato, yellow)";
+        mm.style.translate =
+            "translateX(-" +
+            window.scrollY / (mmtop - document.querySelector('nav').getBoundingClientRect().left) + "px)";
         document.querySelector('tr').style.background = "none";
         document.querySelector('tr').style.boxShadow = "none";
         document.querySelector('nav table tbody tr td strong').style.visibility = "hidden";
