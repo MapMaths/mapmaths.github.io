@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
             "deg, tomato, yellow)";
         mm.style.translate =
             "translateX(-" +
-            window.scrollY / (mmtop - document.querySelector('nav').getBoundingClientRect().left) + "px)";
+            window.scrollY / (mmleft - document.querySelector('nav').getBoundingClientRect().left) + "px)";
         document.querySelector('tr').style.background = "none";
         document.querySelector('tr').style.boxShadow = "none";
         document.querySelector('nav table tbody tr td strong').style.visibility = "hidden";
