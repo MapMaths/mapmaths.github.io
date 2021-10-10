@@ -1,3 +1,2 @@
 # mapmaths.github.io
-This is the source code of GitHub-Page [MapMaths Website Homepage](https://mapmaths.github.io/)
-With VSCode
+Source code for [my website](https://mapmaths.github.io/)!
