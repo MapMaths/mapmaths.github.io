@@ -54,15 +54,20 @@ nav table tbody tr td:nth-of-type(1) {
   padding-top: 5px;
 }
 
+/*
 nav table tbody tr td strong {
-  visibility: hidden;
 }
+*/
 
 nav p {
   text-align: center;
   margin-top: 50vh;
   transform: translateY(-50%);
   font-size: 4rem;
+}
+
+nav p strong {
+  visibility: hidden;
 }
 
 .shareicons {
