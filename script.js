@@ -3,13 +3,16 @@
 var mm = document.querySelector('nav p strong');
 var mmtop = mm.getBoundingClientRect().top;
 var mmleft = mm.getBoundingClientRect().left;
-document.querySelector('nav table tbody tr td strong').style.top(mmtop + 'px');
 
 var gh = document.getElementById("gh");
-gh.onclick = () => {document.location.href = "https://github.com/MapMaths"};
+gh.onclick = () => {
+    document.location.href = "https://github.com/MapMaths"
+};
 
 var gl = document.getElementById("gl");
-gl.onclick = () => {document.location.href = "https://glitch.com/@MapMaths"};
+gl.onclick = () => {
+    document.location.href = "https://glitch.com/@MapMaths"
+};
 
 window.addEventListener('scroll', () => {
     if (window.scrollY <= window.innerHeight) {
@@ -29,3 +32,6 @@ window.addEventListener('scroll', () => {
         //document.querySelector('nav table tbody tr td strong').style.visibility = "visible";
     }
 });
+
+console.log('%c            \n            \n  MapMaths  \n            \n            ',
+            'font-size:4.16666667vw; color:#A89E84; background:#FDF6E3;');
