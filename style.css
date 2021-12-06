@@ -1,23 +1,9 @@
 :root {
   --loading-grey: #ededed;
-  --scrollw: 12px;
 }
 
 ::-webkit-scrollbar {
-  background: #FCF6E3;
-  width: var(--scrollw);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #DBD3BE;
-  border-radius: var(--scrollw);
-}
-
-::-webkit-scrollbar-button {
-  background: #dfcc9c;
-  width: var(--scrollw);
-  height: var(--scrollw);
-  border-radius: 50%;
+  display: none;
 }
 
 body {
@@ -29,7 +15,7 @@ body {
 }
 
 nav {
-  width: calc(100vw - var(--scrollw));
+  width: 100vw;
   height: calc(100vh + 40px);
   background: linear-gradient(45deg, tomato, yellow);
   color: white;
@@ -41,7 +27,7 @@ nav {
 }
 
 nav table tbody tr {
-  width: calc(100vw - var(--scrollw));
+  width: 100vw;
   height: 40px;
   font-size: 20px;
   position: fixed;
@@ -52,12 +38,8 @@ nav table tbody tr {
 
 nav table tbody tr td:nth-of-type(1) {
   padding-top: 5px;
+  position: absolute;
 }
-
-/*
-nav table tbody tr td strong {
-}
-*/
 
 nav p {
   text-align: center;
@@ -104,6 +86,7 @@ nav p strong {
 }
 
 .textblock {
+  position: -webkit-sticky;
   position: sticky;
   border-right-style: solid;
   border-right-width: 2px;
